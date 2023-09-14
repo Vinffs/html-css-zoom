@@ -1,3 +1,5 @@
+/* general */
+
 *{
     margin: 0;
     padding: 0;
@@ -12,3 +14,45 @@
     --color-grey: #222222;
     --color-light-grey: #4a4a4a;
 }
+
+/* .debug{
+    border: 2px solid var(--color-red);
+} */
+
+header, main{
+    background-color: var(--color-back);
+}
+
+footer{
+    background-color: var(--color-grey);
+}
+
+/* flex utilities */
+
+.flex{
+    display: flex;
+}
+
+.justify{
+    justify-content: flex-end;
+}
+
+/* header */
+
+.text-white{
+    color: var(--color-white);
+}
+
+.fa-table-cells{
+    padding-right: 5px;
+}
+
+.lightgrey-box{
+    background-color: var(--color-light-grey);
+    margin-left: 5px;
+    padding: 7px;
+    border-radius: 5px;
+
+}
+
+
