@@ -23,9 +23,20 @@ header, main{
     background-color: var(--color-back);
 }
 
+header, footer{
+    height: 100px;
+}
+
 footer{
     background-color: var(--color-grey);
 }
+
+header, main, footer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 
 /* flex utilities */
 
@@ -35,6 +46,15 @@ footer{
 
 .justify{
     justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.j-center{
+    justify-content: center;
 }
 
 /* header */
@@ -50,9 +70,45 @@ footer{
 .lightgrey-box{
     background-color: var(--color-light-grey);
     margin-left: 5px;
+    margin-top: 5px;
     padding: 7px;
     border-radius: 5px;
-
 }
 
+/* main */
+
+.main-container{
+    padding: 0px 20px 40px 20px;
+} 
+
+.card-container{
+    width: calc(100vw / 8);
+    height: calc(100vw / 8) / 2;
+}
+
+.card-box{
+    padding: 5px;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.user-name{
+    color: var(--color-white);
+    background-color: rgba(74, 74, 74, 0.5);
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    padding: 5px;
+    
+}
+
+
+
+/* footer */
 
