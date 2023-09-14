@@ -15,16 +15,22 @@
     --color-light-grey: #4a4a4a;
 }
 
-/* .debug{
-    border: 2px solid var(--color-red);
-} */
+/* layout */
+
+body{
+    background-color: var(--color-back)
+}
 
 header, main{
     background-color: var(--color-back);
 }
 
-header, footer{
+header{
     height: 100px;
+}
+
+footer{
+    height: 80px;
 }
 
 footer{
@@ -35,8 +41,6 @@ header, main, footer{
     width: 100%;
     margin: 0 auto;
 }
-
-
 
 /* flex utilities */
 
@@ -55,6 +59,14 @@ header, main, footer{
 
 .j-center{
     justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.j-between{
+    justify-content: space-between;
 }
 
 /* header */
@@ -79,6 +91,8 @@ header, main, footer{
 
 .main-container{
     padding: 0px 20px 40px 20px;
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
 } 
 
 .card-container{
@@ -112,3 +126,32 @@ header, main, footer{
 
 /* footer */
 
+.fa-chevron-up{
+    font-size: 10px;
+    font-weight: bolder;
+    color: var(--color-white);
+}
+
+.mic{
+    color: var(--color-white);
+    text-align: center;
+    padding: 15px;
+}
+
+.icon{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.end-call-button{
+    background-color: var(--color-light-grey);
+}
+
+.leave-text{
+    color: var(--color-red);
+    padding: 20px;
+}
+
+.green{
+    color: var(--color-light-green);
+}
